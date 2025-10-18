@@ -13,7 +13,7 @@ void solve()
         cin >> a[i];
     }
     vector<int> prefix(n + 1, 0);
-    for (int i = 1; i <= n; i ++)
+    for (int i = 1; i <= n; i ++) // prefix sum
     {
         prefix[i] = prefix[i - 1] + a[i - 1];
     }
