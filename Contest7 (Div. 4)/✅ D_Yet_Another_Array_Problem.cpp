@@ -44,7 +44,7 @@ void solve()
             }
         }
         if (!isPrime) continue;
-        if (g % p != 0) 
+        if (gcd(g, p) == 1) 
         {
             cout << p << endl;
             return;
